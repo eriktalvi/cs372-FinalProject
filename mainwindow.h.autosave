@@ -139,8 +139,6 @@ class PlayListWindow : public QMainWindow
 public:
     explicit PlayListWindow(QWidget *child = 0);
     ~PlayListWindow();
-protected:
-private slots:
 private:
     Ui::PlayListWindow *_pl;
 };

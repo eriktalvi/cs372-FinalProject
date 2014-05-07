@@ -5,6 +5,7 @@
 #include "setup.h"
 #include "ui_mainwindow.h"
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     _ui(new Ui::MainWindow),
@@ -75,4 +76,20 @@ MainWindow::MainWindow(QWidget *parent) :
 MainWindow::~MainWindow()
 {
     delete _ui;
+}
+
+PlayListWindow::PlayListWindow(QWidget *parent) :
+    QMainWindow(parent),
+    _pl(new Ui::PlayListWindow)
+{
+    //setWindowIcon(_mainWindowIcon);
+    setWindowTitle("PlayList");
+
+    setFixedWidth(7*72);
+    setFixedHeight(4*72);
+}
+
+PlayListWindow::~PlayListWindow()
+{
+    delete _pl;
 }
